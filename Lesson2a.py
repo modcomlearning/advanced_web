@@ -11,6 +11,13 @@
 
 
 
+# Create a conversion function
+# amount_in_kes is a parameter
+def converter(amount_in_kes):
+    # convert the amount received to usd
+    amount_in_usd = amount_in_kes/108
+    print(amount_in_usd)
+    
 
 def payroll():
     basic_salary = 50000
