@@ -16,8 +16,8 @@
 def converter(amount_in_kes):
     # convert the amount received to usd
     amount_in_usd = amount_in_kes/108
-    print(amount_in_usd)
-    
+    return amount_in_usd
+
 
 def payroll():
     basic_salary = 50000
@@ -28,15 +28,14 @@ def payroll():
     gross_pay = basic_salary + allowances
     print('Gross Pay is KES', gross_pay)
     # convert gross pay to usd
-    gross_in_usd = gross_pay/108
-    print('Gross in USD is ', gross_in_usd)
+    print('Gross in USD', converter(gross_pay))
 
     # Find net pay
     net_pay = gross_pay - deductions
     print('Net Pay is KES', net_pay)
     # convert the netpay in usd
-    net_in_usd = net_pay/108
-    print('Net Pay is USD ', net_in_usd)
+    # NB: converter is returning
+    print('Net in USD is ', converter(net_pay))
 
 # call a function for it to run
 payroll()
