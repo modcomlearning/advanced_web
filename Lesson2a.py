@@ -8,9 +8,6 @@
 #  One function can perform a specific task
 
 
-
-
-
 # Create a conversion function
 # amount_in_kes is a parameter
 def converter(amount_in_kes):
@@ -19,7 +16,9 @@ def converter(amount_in_kes):
     return amount_in_usd
 
 
+# Google classroom: ptv4a6I
 def payroll():
+
     basic_salary = 50000
     allowances = 2000
     deductions = 3000
@@ -34,6 +33,7 @@ def payroll():
     net_pay = gross_pay - deductions
     print('Net Pay is KES', net_pay)
     # convert the netpay in usd
+
     # NB: converter is returning
     print('Net in USD is ', converter(net_pay))
 
