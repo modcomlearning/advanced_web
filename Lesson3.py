@@ -25,7 +25,16 @@ def employee_tax():
     # Here we learn that code is improved when functions are used.i,e converter is re used
     # DRY - Don't Repeat Yourself
     # Control Statements.. if, elif, else , for , while
-    
+    if net_income < 50000:
+        print('Tax will be 15% of ', net_income)
 
+    elif net_income < 70000:
+        print('Tax will be 20% of', net_income)
+
+    elif net_income < 100000:
+        print('Tax will be 25% of', net_income)
+
+    else:
+        print('Tax will be 30% of ', net_income)
 
 employee_tax()
