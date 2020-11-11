@@ -38,5 +38,5 @@ def payroll():
     print('Net in USD is ', converter(net_pay))
 
 # call a function for it to run
-payroll()
+#payroll()
 

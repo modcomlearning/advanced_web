@@ -4,6 +4,9 @@
 # The taxpayer's dependency exemption is determined by multiplying $3,000 times the number of children.
 # The taxpayer's net income is determined by taking the taxpayer's gross income
 # and subtracting the taxpayer's dependency exemption.
+# if netpay < 50000, tax is 15% of salary
+# 50000  - 70000    tax 20% of salary
+# over 70000 pay 25% of salary
 def employee_tax():
     gross_income = 50000
     number_of_children = 2
@@ -15,7 +18,14 @@ def employee_tax():
     net_income = gross_income - dependency_exemption
     print('Net Income KES', net_income)
 
+    # Re use a function in lesson2a
+    from Lesson2a import converter
+    print('Net Income in USD ', converter(net_income))
 
+    # Here we learn that code is improved when functions are used.i,e converter is re used
+    # DRY - Don't Repeat Yourself
+    # Control Statements.. if, elif, else , for , while
+    
 
 
 employee_tax()
