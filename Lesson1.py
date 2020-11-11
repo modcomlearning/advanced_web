@@ -14,6 +14,8 @@ print(weight)
 print(name)
 print(paid)
 
+money = 400000
+
 
 # Lets do a simple simple interest calculator  - PRT/100
 principle = 20000

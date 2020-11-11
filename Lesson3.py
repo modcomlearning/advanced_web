@@ -7,6 +7,21 @@
 # if netpay < 50000, tax is 15% of salary
 # 50000  - 70000    tax 20% of salary
 # over 70000 pay 25% of salary
+
+def check(net_income):
+    if net_income < 50000:
+        print('Tax will be 15% of ', net_income)
+
+    elif net_income < 70000:
+        print('Tax will be 20% of', net_income)
+
+    elif net_income < 100000:
+        print('Tax will be 25% of', net_income)
+
+    else:
+        print('Tax will be 30% of ', net_income)
+        
+
 def employee_tax():
     gross_income = 50000
     number_of_children = 2
@@ -25,16 +40,7 @@ def employee_tax():
     # Here we learn that code is improved when functions are used.i,e converter is re used
     # DRY - Don't Repeat Yourself
     # Control Statements.. if, elif, else , for , while
-    if net_income < 50000:
-        print('Tax will be 15% of ', net_income)
 
-    elif net_income < 70000:
-        print('Tax will be 20% of', net_income)
 
-    elif net_income < 100000:
-        print('Tax will be 25% of', net_income)
-
-    else:
-        print('Tax will be 30% of ', net_income)
-
+#
 employee_tax()
