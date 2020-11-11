@@ -8,7 +8,7 @@
 # 50000  - 70000    tax 20% of salary
 # over 70000 pay 25% of salary
 
-def check(net_income):
+def check(net_income): # expecting a net income
     if net_income < 50000:
         print('Tax will be 15% of ', net_income)
 
@@ -20,7 +20,6 @@ def check(net_income):
 
     else:
         print('Tax will be 30% of ', net_income)
-        
 
 def employee_tax():
     gross_income = 50000
@@ -36,7 +35,7 @@ def employee_tax():
     # Re use a function in lesson2a
     from Lesson2a import converter
     print('Net Income in USD ', converter(net_income))
-
+    check(net_income)  # provides the net_income to check()
     # Here we learn that code is improved when functions are used.i,e converter is re used
     # DRY - Don't Repeat Yourself
     # Control Statements.. if, elif, else , for , while
