@@ -15,6 +15,11 @@ class Account:
     def deposit(self, amount):
         print('Welcome ', self.name)
         print('Your Current Balance is ', self.balance)
+        self.balance = self.balance + amount
+        print('You deposited ', amount)
+        print('Your New balance is ', self.balance)
+        print('Thank you')
+
 
 
 
