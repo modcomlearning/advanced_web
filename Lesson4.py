@@ -7,7 +7,6 @@
 # lets understand it.
 # a class is where the object lives - blueprint/template
 class Car:
-
     def __init__(self):
         self.name = 'Nissan'
         self.weight =  500
@@ -26,6 +25,13 @@ class Car:
         print('The car weight is ', self.weight, 'Kgs')
         print('The car age is ', self.age)
 
+
+# use object
+object = Car() # instantiate
+object.move()
+object.carry()
+
+# .(dot) means - you are accessing the behaviors/functions of an object
 
 
 
