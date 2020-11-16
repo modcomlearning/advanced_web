@@ -21,7 +21,8 @@ class Account:
         print('Thank you')
 
 
-
-
+object = Account()
+object.deposit(2000)
+object.deposit(2000)
 
 
