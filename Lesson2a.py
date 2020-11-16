@@ -17,8 +17,8 @@ def converter(amount_in_kes):
 
 
 # Google classroom: ptv4a6I
+# 0729 225 710
 def payroll():
-
     basic_salary = 50000
     allowances = 2000
     deductions = 3000
@@ -27,16 +27,16 @@ def payroll():
     gross_pay = basic_salary + allowances
     print('Gross Pay is KES', gross_pay)
     # convert gross pay to usd
-    print('Gross in USD', converter(gross_pay))
+    print('Gross in Usd ', converter(gross_pay))
+
 
     # Find net pay
     net_pay = gross_pay - deductions
     print('Net Pay is KES', net_pay)
     # convert the netpay in usd
+    print('Netpay in usd ', converter(net_pay))
 
-    # NB: converter is returning
-    print('Net in USD is ', converter(net_pay))
 
 # call a function for it to run
-#payroll()
+payroll()
 

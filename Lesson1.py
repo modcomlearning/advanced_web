@@ -15,7 +15,8 @@ print(name)
 print(paid)
 
 money = 400000
-
+from Lesson3 import check
+check(money)
 
 # Lets do a simple simple interest calculator  - PRT/100
 principle = 20000

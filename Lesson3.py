@@ -7,7 +7,8 @@
 # if netpay < 50000, tax is 15% of salary
 # 50000  - 70000    tax 20% of salary
 # over 70000 pay 25% of salary
-
+# Functional Way - Flask Framework
+# Object Oriented Way  -
 def check(net_income): # expecting a net income
     if net_income < 50000:
         print('Tax will be 15% of ', net_income)
@@ -21,6 +22,7 @@ def check(net_income): # expecting a net income
     else:
         print('Tax will be 30% of ', net_income)
 
+
 def employee_tax():
     gross_income = 50000
     number_of_children = 2
@@ -32,6 +34,7 @@ def employee_tax():
     net_income = gross_income - dependency_exemption
     print('Net Income KES', net_income)
 
+
     # Re use a function in lesson2a
     from Lesson2a import converter
     print('Net Income in USD ', converter(net_income))
@@ -41,5 +44,4 @@ def employee_tax():
     # Control Statements.. if, elif, else , for , while
 
 
-#
 employee_tax()
