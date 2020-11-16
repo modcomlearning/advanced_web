@@ -16,15 +16,18 @@ class Car:
         self.mileage = 50000
         # above we define attributes of a car as variables
 
-
-
-    def move(self):  # behavior/function
+    def move(self):  # 1st behavior/function
         print('A car is moving')
         print('The car weight is ', self.weight)
         print('The car mileage is ', self.mileage)
 
+    def carry(self):
+        print('The car is carrying')
+        print('The car weight is ', self.weight, 'Kgs')
+        print('The car age is ', self.age)
 
-    
+
+
 
 
 
