@@ -14,10 +14,17 @@ class Car:
         self.color = 'blue'
         self.age = 10
         self.mileage = 50000
-        # above we deifine atributes of a car as variables
+        # above we define attributes of a car as variables
 
-        
 
+
+    def move(self):  # behavior/function
+        print('A car is moving')
+        print('The car weight is ', self.weight)
+        print('The car mileage is ', self.mileage)
+
+
+    
 
 
 
