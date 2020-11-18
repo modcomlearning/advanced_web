@@ -24,9 +24,14 @@ class Account:
         print('Welcome ', self.name)
         print('Your Current balance is ', self.balance)
         if amount > self.balance:
-            print('You have insufficient Funds')
-            
-
+           print('You have insufficient Funds')
+        elif amount < 1:
+            print('You cannot withdraw zero/negative')
+        else:
+            print('You have requested to withdraw ', amount)
+            self.balance = self.balance - amount
+            print('Deposit Successful')
+            print('Your current balance is ', self.balance)
 
 
 
