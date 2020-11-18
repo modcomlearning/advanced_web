@@ -30,29 +30,20 @@ class Account:
         else:
             print('You have requested to withdraw ', amount)
             self.balance = self.balance - amount
-            print('Deposit Successful')
+            print('Withdraw Successful')
             print('Your current balance is ', self.balance)
 
+    def check(self):
+        print('Your Current balance is ', self.balance)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# https://github.com/modcomlearning/advanced_web/blob/master/OOP.py
 
 object = Account()  # instantiate
 object.deposit(2000)
 object.deposit(2000)
+object.withdraw(40)
+object.check()
 # Assignment
 # do a withdrawal function, if possible check that we can't withdraw more than balance
 #                  if possible check we can't withdraw a zero
